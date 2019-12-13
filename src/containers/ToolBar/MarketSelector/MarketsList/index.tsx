@@ -92,12 +92,13 @@ class MarketsListComponent extends React.Component<Props, State> {
     }
 
     private currencyPairSelectHandler = (key: string) => {
-        const { markets } = this.props;
+        const { currentMarket, markets } = this.props;
         const marketToSet = markets.find(el => el.name === key);
 
         this.props.setCurrentPrice();
-        if (marketToSet) {
+        if (marketToSet && marketToSet.id !== currentMarket.id) {
             this.props.setCurrentMarket(marketToSet);
+
             if (!incrementalOrderBook()) {
               this.props.depthFetch(marketToSet);
             }
