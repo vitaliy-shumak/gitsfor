@@ -24,6 +24,7 @@ const mockConfig: Config = {
     isResizable: false,
     isDraggable: false,
     languages: ['en', 'ru'],
+    passwordEntropyStep: 0,
 };
 
 // tslint:disable no-any no-console

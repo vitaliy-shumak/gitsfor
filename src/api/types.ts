@@ -18,4 +18,5 @@ export interface Config {
     isResizable: boolean;
     isDraggable: boolean;
     languages: string[];
+    passwordEntropyStep: number;
 }
