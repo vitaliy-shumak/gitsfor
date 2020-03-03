@@ -11,8 +11,7 @@ class FooterComponent extends React.Component<RouterProps> {
         return (
             <React.Fragment>
                 <footer className="pg-footer">
-                    <span>Powered by</span>
-                    <a href="https://www.openware.com">open</a>
+                 
                 </footer>
             </React.Fragment>
         );
